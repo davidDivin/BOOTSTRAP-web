@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Souhait</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h1 {
+            color: blue;
+        }
+        .coordonnees {
+            color: green;
+        }
+        .souhait {
+            color: blue;
+        }
+        body {
+            background-image: url('D.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #000; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-4">
+        <h1 class="text-center">Formulaire</h1>
+        <form method="post" action="traitement.php">
+            <fieldset class="border p-4 mb-4 coordonnees">
+                <legend class="w-auto px-2">Vos coordonnées</legend>
+                <div class="form-group">
+                    <label for="nom">Quel est votre nom ?</label>
+                    <input type="text" class="form-control" name="nom" id="nom" tabindex="10">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Quel est votre prénom ?</label>
+                    <input type="text" class="form-control" name="prenom" id="prenom" tabindex="20">
+                </div>
+                <div class="form-group">
+                    <label for="email">Quel est votre e-mail ?</label>
+                    <input type="email" class="form-control" name="email" id="email" tabindex="30">
+                </div>
+            </fieldset>
+            <fieldset class="border p-4 mb-4 souhait">
+                <legend class="w-auto px-2">Votre souhait</legend>
+                <p>Faites un souhait que vous voudriez voir exaucé :</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="souhait" value="riche" id="riche" tabindex="40">
+                    <label class="form-check-label" for="riche">Etre riche</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="souhait" value="celebre" id="celebre" tabindex="50">
+                    <label class="form-check-label" for="celebre">Etre célèbre</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="souhait" value="intelligent" id="intelligent" tabindex="60">
+                    <label class="form-check-label" for="intelligent">Etre <strong>encore</strong> plus intelligent</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="souhait" value="autre" id="autre" tabindex="70">
+                    <label class="form-check-label" for="autre">Autre...</label>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="precisions">Si "Autre", veuillez préciser :</label>
+                    <textarea class="form-control" name="precisions" id="precisions" cols="40" rows="4" tabindex="80"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary" tabindex="90">Envoyer</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau des Noms, Prénoms et Âges</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('L.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white; 
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgba(255, 255, 255, 0.1); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Tableau 2</h1>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Âge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AGBO</td>
+                    <td>Loé</td>
+                    <td>15 ans</td>
+                </tr>
+                <tr>
+                    <td>SOUDE</td>
+                    <td>Emmanuel</td>
+                    <td>19 ans</td>
+                </tr>
+                <tr>
+                    <td>GANKPIN</td>
+                    <td>Nazaretha</td>
+                    <td>17 ans</td>
+                </tr>
+                <tr>
+                    <td>HOUEZE</td>
+                    <td>Marc</td>
+                    <td>20 ans</td>
+                </tr>
+                <tr>
+                    <td>AGOSSOU</td>
+                    <td>Jean</td>
+                    <td>19 ans</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
